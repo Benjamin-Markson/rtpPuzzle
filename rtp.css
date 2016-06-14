@@ -1,0 +1,117 @@
+/* Benjamin Markson 2016. All Rights Reserved. All Wrongs Denied. Absolutely No Refunds. */
+/* Originally coded as a Firefox add-on: https://addons.mozilla.org/en-US/firefox/addon/rotating-tiles-picture-puzz/ */
+
+body
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#rtpPuzzle-controls
+{
+	position:fixed;
+	left:0px;
+	top:0px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 4px;
+	font-size: 11px;
+	background-color: black;
+	z-index: 1;
+}
+
+#rtpPuzzle-controls-image
+{
+	vertical-align: bottom;
+	padding: 2px;
+	cursor: pointer;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 5px;
+	position: relative;
+	top: 7px;
+	left: 7px;
+}
+
+#rtpPuzzle-tiles
+{
+	position:fixed;
+	left:0px;
+	top:0px;
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#rtpPuzzle-tiles-rows
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-spacing: 0px;
+}
+
+#rtpPuzzle-controls-imageCell,
+#rtpPuzzle-controls-linkCell,
+#rtpPuzzle-scoreCell,
+#rtpPuzzle-controls-forwardsCell
+{
+	position: relative;
+}
+
+#rtpPuzzle-controls-imageCell:hover .tooltiptext,
+#rtpPuzzle-controls-linkCell:hover .tooltiptext,
+#rtpPuzzle-scoreCell:hover .tooltiptext,
+#rtpPuzzle-controls-forwardsCell:hover .tooltiptext
+{
+	visibility: visible;
+	transition-property: visibility;
+	transition-delay: 1.00s;
+}
+
+#rtpPuzzle-controls-imageCell .tooltiptext
+{
+	visibility: hidden;
+	top: 90%;
+	left: 90%;
+}
+
+#rtpPuzzle-controls-linkCell .tooltiptext
+{
+	visibility: hidden;
+	top: -40px;
+	left: -60px;
+}
+
+#rtpPuzzle-scoreCell .tooltiptext
+{
+	visibility: hidden;
+	bottom: 90%;
+	left: -10%;
+}
+
+#rtpPuzzle-controls-forwardsCell .tooltiptext
+{
+	visibility: hidden;
+	bottom: 90%;
+	right: 10%;
+}
+
+.tooltiptext
+{
+	background-color: black;
+	color: white;
+	font-size: 11px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px 5px;
+	position: absolute;
+	z-index: 1;
+}
