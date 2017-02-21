@@ -9,6 +9,11 @@ body
 	color: white;
 	margin: 0;
 	padding: 0;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
 }
 
 #rtpPuzzle-controls
